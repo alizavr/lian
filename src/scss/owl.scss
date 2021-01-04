@@ -1,0 +1,52 @@
+.owl-prev {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  border: 1px solid #fff !important;
+  border-radius: 50% !important;
+  img {
+    font-size: 23px;
+    padding: 15px 22px;
+  }
+}
+.owl-next {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+
+  border: 1px solid #fff !important;
+  border-radius: 50% !important;
+  img {
+    font-size: 23px;
+    padding: 15px 22px;
+  }
+}
+.owl-nav .owl-next:hover,
+.owl-nav .owl-prev:hover {
+  background-color: #000000 !important;
+  border-radius: 50% !important;
+  border: none !important;
+}
+.owl-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translate(-50%);
+}
+.owl-dot span {
+  display: none !important;
+}
+.owl-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: white !important;
+  margin-right: 5px;
+  border: 4px solid transparent !important;
+}
+
+.owl-dot.active {
+  border: #000000 4px solid !important;
+  border-radius: 50%;
+  background-color: white !important;
+}

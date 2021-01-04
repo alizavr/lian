@@ -1,0 +1,10 @@
+$main-color: #777777;
+$secondary-color: #ffffff;
+$secondary-alpha: rgba(
+  $color: #ffffff,
+  $alpha: 0.8,
+);
+$background-color: #f8f9fa;
+html {
+  scroll-behavior: smooth;
+}
