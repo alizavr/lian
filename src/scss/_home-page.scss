@@ -87,7 +87,6 @@
     color: #777777;
     font-size: 14px;
     font-weight: 700px;
-    font-family: "Roboto", sans-serif;
 
     &:hover {
       color: #000000;
@@ -95,7 +94,7 @@
   }
 }
 .icon-line:before {
-  content: "\E001";
+  content: "\E002";
   font-family: "Icon";
   display: inline-block;
   margin-left: 18px;
@@ -136,5 +135,4 @@
   background-color: #959595;
   text-transform: uppercase;
   padding: 10px 25px;
-  font-family: "Roboto", sans-serif;
 }

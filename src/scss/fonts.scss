@@ -2,7 +2,7 @@
   font-family: "Icon";
   src: url("../fonts/Icon.eot");
   src: url("../fonts/Icon.eot?#iefix") format("eot"),
-    url("../fonts/Icon.woff2") format("woff2"),
+    url("../fonts/con.woff2") format("woff2"),
     url("../fonts/Icon.woff") format("woff"),
     url("../fonts/Icon.ttf") format("truetype"),
     url("../fonts/Icon.svg#Icon") format("svg");
@@ -20,6 +20,10 @@
   text-transform: none;
 }
 
-.icon-line:before {
+.icon-flag:before {
   content: "\E001";
+}
+
+.icon-line:before {
+  content: "\E002";
 }

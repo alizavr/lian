@@ -1,5 +1,5 @@
-const nextIcon = '<img src="img/right01.png" alt:"right">';
-const prevIcon = '<img src="img/right.png" alt:"prev">';
+const nextIcon = '<img src="img/dist/right01.png" alt:"right">';
+const prevIcon = '<img src="img/dist/right.png" alt:"prev">';
 $(document).ready(function(){
     $('.header__burger').click(function(event){
         $('.header__burger, .header__menu').toggleClass('active');
