@@ -56,6 +56,9 @@
   width: 360px;
   margin-bottom: 32px;
   color: #b7b7b7;
+  @media only screen and (max-width: 360px) {
+    max-width: 290px;
+  }
 }
 textarea {
   display: block;
@@ -65,7 +68,7 @@ textarea {
   padding: 6px;
   height: 147px;
   margin-bottom: 32px;
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 1117px) {
     max-width: 360px;
   }
 }
@@ -76,7 +79,7 @@ textarea {
     flex-direction: column;
   }
 }
-form {
+.form__contact {
   margin-left: 50px;
   @media only screen and (max-width: 767px) {
     margin-left: 0;
@@ -110,9 +113,8 @@ iframe {
   }
   &__pic {
     margin-bottom: 26px;
-    @media only screen and (max-width: 767px) {
-      width: 100%;
-    }
+    height: auto;
+    width: 100%;
   }
   &__headline {
     color: #000000;

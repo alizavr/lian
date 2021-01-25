@@ -52,17 +52,30 @@
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 9px;
+    line-height: 28px;
   }
 }
 .info {
   display: flex;
   justify-content: space-between;
   margin-bottom: 98px;
+  @media only screen and (max-width: 1000px) {
+    flex-direction: column;
+  }
+  &__pic {
+    img {
+      @media only screen and (max-width: 767px) {
+        width: 100%;
+      }
+    }
+  }
 }
 .story {
   padding-top: 8px;
   padding-left: 53px;
-
+  @media only screen and (max-width: 1000px) {
+    padding-left: 0;
+  }
   &__caption {
     color: #000000;
     text-transform: uppercase;
@@ -81,11 +94,13 @@
 .bar {
   position: relative;
 }
-.skills__info .wrapper {
-  max-width: 560px;
-  margin: auto;
+.topic {
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 9px;
+  margin-bottom: 43px;
 }
-
 .skills__info ul {
   padding: 0;
 }
@@ -107,26 +122,7 @@
   display: block;
   overflow: hidden;
 }
-
-.skills__info .bar span {
-  height: 2px;
-  background-color: #dfdfdf;
-  display: flex;
-  position: absolute;
-  top: 4px;
-}
-
-.skills__info .ui {
-  width: 75%;
-}
-
-.skills__info .web {
-  color: #dfdfdf;
-  position: relative;
-  width: 90%;
-}
-
-.skills__info .web::after {
+.skills__info .photo:after {
   content: "";
   position: absolute;
   top: -3px;
@@ -135,7 +131,43 @@
   border: 4px solid #000000;
   border-radius: 50%;
 }
-.skills__info .marketing {
+.skills__info .psd:after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  right: 0;
+  color: transparent;
+  border: 4px solid #000000;
+  border-radius: 50%;
+}
+.skills__info .bar span {
+  height: 2px;
+  background-color: #dfdfdf;
+  display: flex;
+  position: absolute;
+  top: 4px;
+}
+
+.skills__info .psd {
+  width: 75%;
+}
+
+.skills__info .brand {
+  color: #dfdfdf;
+  position: relative;
+  width: 90%;
+}
+
+.skills__info .brand:after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  right: 0;
+  color: transparent;
+  border: 4px solid #000000;
+  border-radius: 50%;
+}
+.skills__info .photo {
   width: 65%;
 }
 
@@ -143,13 +175,6 @@
   width: 50%;
   background-color: #e9e9e9;
 }
-.icon-flag:before {
-  content: "\E001";
-  font-family: "Icon";
-  position: absolute;
-  right: 190px;
-}
-
 .staff {
   display: flex;
   justify-content: space-between;
@@ -166,6 +191,7 @@
   &__pic {
     margin-bottom: 34px;
     height: auto;
+    width: 90%;
     @media only screen and (max-width: 767px) {
       width: 100%;
     }
